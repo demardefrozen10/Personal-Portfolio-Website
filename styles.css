@@ -1,0 +1,79 @@
+* {
+    font-family: roboto;
+    color: white;
+}
+
+
+body {
+    background-color: #1a1a1d;
+}
+
+div {
+    margin-bottom: 1000px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+
+.firstSection {
+    height: 50%;
+    padding-top: 25%;
+    
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 2000px;
+    flex-wrap: wrap;
+    gap: 0.70rem;
+    
+}
+
+
+.box {
+    width: 300px;
+    border-radius: 2rem;
+    border-color: white;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+    padding-top: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0px;
+
+}
+
+
+ul {
+    list-style: none;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#myarrow {
+    height: 15px;
+}
+
+
+.skills > .scroller {
+    flex-basis: 100%;
+}
+
+
+.projects > .scroller {
+    flex-basis: 100%;
+}
+
+#welcome {
+    animation: slide-left 10s;
+}
