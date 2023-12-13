@@ -74,6 +74,14 @@ ul {
     flex-basis: 100%;
 }
 
-#welcome {
-    animation: slide-left 10s;
+.navbar {
+    list-style-type: none;
+    padding: 1rem 0rem 0rem 0rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1600px;
 }
+

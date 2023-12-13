@@ -33,3 +33,15 @@ function updateClock() {
 updateClock();
 
 setInterval(updateClock, 1000);
+
+
+
+function navBar() {
+    var x = document.getElementById("ok");
+    if (x.style.display === "block") {
+        x.style.display = none;
+    }
+    else {
+        x.style.display = "block";
+    }
+}
