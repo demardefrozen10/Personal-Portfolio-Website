@@ -8,12 +8,11 @@ body {
     background-color: #1a1a1d;
 }
 
-div:not(.scroller):not(.box) {
+div:not(.scroller):not(.box):not(.bar):not(.hamburger) {
     margin-bottom: 900px;
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
-    padding-top: 20rem;
     
 }
 
