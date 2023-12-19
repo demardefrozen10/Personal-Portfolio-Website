@@ -74,7 +74,7 @@ ul {
     flex-basis: 100%;
 }
 
-.navbar {
+nav > ul {
     list-style-type: none;
     padding: 1rem 0rem 0rem 0rem;
     display: flex;
@@ -85,3 +85,52 @@ ul {
     max-width: 1600px;
 }
 
+nav > ul > li > a {
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    color: red;
+}
+
+.nav {
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display: none;
+    justify-content: right;
+}
+
+
+.bar {
+    height: 2px;
+    width: 27px;
+    background: white;
+    margin: 5px 0;
+    opacity: 0.8;
+}
+.nav--open {
+    transform: translate(0) !important;
+}
+@media (max-width: 650px) {
+    nav  {
+        top: 60px;
+        left: 0;
+        width: 100%;
+        transform: translateX(-100%);
+    }
+
+    nav > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
+}
