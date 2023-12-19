@@ -11,12 +11,18 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav>
-        <ul class="navbar">
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>About Me</li>
-            <li>Contact</li>
+    <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+
+    </div>
+    <nav class="nav">
+        <ul>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#welcome">Contact</a></li>
         </ul>
     </nav>
     <div class="firstSection">
@@ -27,14 +33,15 @@
 </div>
     </div>
     <div id="introduction">
-        <h2>hi, my name is jason.</h2>
-        <p>i am a second year computer science student at york university.</p>
-        <p>courses: </p>
-        <p>eecs2101 fundementals of data structures</p>
-        <p>eecs2031 software tools</p>
-        <p>eecs2311 software development project</p>
-        <p>eecs2030 advanced object oriented programming</p>
-        <p>eecs2021 computer organization</p>
+        <h2>hi, my name is jason deng</h2>
+        <p>i am a second year computer science student at york university, aspiring to be a software developer</p>
+        <p>here are some courses i am currently or have taken:</p>
+        <p>eecs2030 - advanced object oriented programming</p>
+        <p>eecs2031 - software tools</p>
+        <p>eecs2021 - computer organization</p>
+        <p>eecs2311 - software development project</p>
+        <p>eecs2101 - fundementals of data structures</p>
+
 
         <div class="scroller">
             <p>scroll</p>
@@ -60,41 +67,55 @@
             <li>junit</li>
             <li>beautifulsoup</li>
         </ul>
+        
         <div class="scroller">
             <p>scroll</p>
             <a href="#projects"><img id="myarrow" src="downarrows.png"></a>
         </div>
     </div>
     <div class="projects" id="projects">
+        <h2 id="projectsh2">projects</h2>
         <div class="box">
+            <a href="https://github.com/demardefrozen10/IronStrong" target="_blank">
             <h3>ironstrong</h3>
             <p>a fitness web app used to lookup exercises as well as calculating a routine for warmups.</p>
             <p>technologies used: html/css, javascript, python, flask, beautfiulsoup, bootstrap</p>
+            </a>
         </div>
         <div class="box">
+            <a href="https://github.com/demardefrozen10/tabemono" target="_blank">
             <h3>tabemono</h3>
             <p>part of a submission for maplehacks. looksup local food banks to donate to and sorts them by severity. </p>
             <p>technologies used: html/css, tailwind css, next.js, react.js, beautfiulsoup</p>
+            </a>
 
         </div>
         <div class="box">
+            <a href="https://github.com/demardefrozen10/Western-University-Course-Dashboard" target="_blank">
+
             <h3>western university course lookup</h3>
             <p>hackathon project for hack western. lookup courses required by your major/module. </p>
             <p>technologies used: html/css, flask, python, beautifulsoup, selenium</p>
+        </a>
 
         </div>
         <div class="box">
-            <h3>jasondeng.dev</h3>
-            <p>personal website used to display my skills, projects, and experience. used to monitor the oh yeah mr krabs oh yeah mr krabs krabs krab krab krab krab krab krab </p>
-            <p>technologies used: html/css, javascript</p>
+            <a href="https://github.com/demardefrozen10/personalwebsite-2.0" target="_blank">
 
+            <h3>jasondeng.dev</h3>
+            <p>personal website used to display my "skills", projects, and experience. created with love and creativty!!!!! stll dont have too much skillz tho :(  </p>
+            <p>technologies used: html/css, javascript</p>
+        </a>
         </div>
         <div class="scroller">
             <p>scroll</p>
             <img id="myarrow" src="downarrows.png">
         </div>
 </div>
-<p id="time">current time: </p>
+<div>
+    <p id="time">current time: </p>
+
+</div>
 	<script src="index.js"></script>
   </body>
 </html>
