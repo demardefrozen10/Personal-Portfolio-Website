@@ -16,8 +16,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function updateClock() {
 
     const now = new Date(); //current date
-
     let hour = now.getHours() % 12; // get current hour
+    // Set hour to 12 when it's 0 (midnight)
+    hour = hour === 0 ? 12 : hour;
 
     let minute = now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
 
@@ -25,9 +26,13 @@ function updateClock() {
 
     let pmoram = now.getHours() > 12 ? "PM" : "AM";
 
-
-
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday,", "Thursday", "Friday", "Saturday"];
+    const monthNames = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
     document.getElementById("time").innerHTML = "Time is currently: " + hour + ":" + minute + ":" + seconds +  " " + pmoram ;
+    document.getElementById("today").innerHTML = days[now.getDay()] + ", " +monthNames[now.getMonth()] + " " + now.getDay();
 }
 
 updateClock();

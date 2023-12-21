@@ -8,21 +8,61 @@ body {
     background-color: #1a1a1d;
 }
 
-div:not(.scroller):not(.box):not(.bar):not(.hamburger) {
-    margin-bottom: 900px;
+div:not(.scroller):not(.box):not(.bar):not(.hamburger):not(.firstSection):not(.buttons):not(.button):not(.outro) {
+    margin-bottom: 500px;
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
+    padding-top: 6rem;
     
+}
+
+.outro {
+    margin-bottom: 0;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15rem;
+}
+
+.button {
+    width: 100px;
+    border-radius: 2rem;
+    border-color: white;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0px;
+    height: 20px;
+    overflow: hidden;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 
 .firstSection {
     height: 50%;
-    padding-top: 25%;
+    padding-top: 20%;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    margin-bottom: 900px;
+
+
     
 }
-
+ul {
+    margin: 0;
+}
 .projects {
     display: flex;
     align-items: center;
@@ -61,9 +101,10 @@ ul {
 
 .skills {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 #myarrow {
@@ -72,7 +113,10 @@ ul {
 
 
 .skills > .scroller {
-    flex-basis: 100%;
+    flex-basis: 0%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 
@@ -139,6 +183,9 @@ nav > ul > li > a:hover {
         display: block;
 
     }
+  
+  
+    
 }
 
 a {
